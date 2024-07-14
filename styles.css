@@ -1,0 +1,68 @@
+body {
+  font-family: sans-serif;
+  background-color: #f0f0f0; /* Warna abu-abu muda */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #fff; /* Warna putih */
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  text-align: center;
+}
+
+header {
+  background-color: #007bff; /* Warna biru */
+  color: #fff; /* Warna putih */
+  padding: 15px 0;
+  border-radius: 10px 10px 0 0;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+#login-form {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #530c0c;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #f8f8f8; /* Warna abu-abu muda */
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d6290e;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #007bff; /* Warna biru */
+  color: #fff; /* Warna putih */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Warna biru lebih gelap */
+}
+
+#players-list li {
+  list-style: none;
+  margin: 10px 0;
+}
+

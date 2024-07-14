@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <div id="awal-from" >
+    <title>Permainan Voting Acak - SMAN 1 Gedeg</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </div>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Permainan Voting Acak</h1>
+      <h2>SMAN 1 Gedeg</h2>
+    </header>
+
+    <div id="login-form">
+      <h2>Login</h2>
+      <label for="kode">Kode Admin:</label>
+      <input type="text" id="kode" required><br><br>
+      <button onclick="checkKode()">Login</button>
+    </div>
+
+    <div id="game-form" style="display:none;">
+      <h2>Masukan Nama Anda</h2>
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" required><br><br>
+      <button onclick="startVoting()">Mulai Voting</button>
+    </div>
+
+    <div id="voting-area" style="display:none;">
+      <h2>Pilih Siapa yang Layak Dihukum</h2>
+      <ul id="players-list"></ul>
+      <button onclick="submitVotes()">Kirim Voting</button>
+    </div>
+
+    <div id="results-area" style="display:none;">
+      <h2>Hasil Voting</h2>
+      <canvas id="barChart" width="400" height="200"></canvas>
+      <p id="results-text"></p>
+    </div>
+
+    <div class="container" style="display: none;">
+    </div>
+
+      <canvas id="barChart"></canvas>
+      <script src="script.js"></script>
+    </div>
+    
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
